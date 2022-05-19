@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Мобильная регистратура</string>
+    <string name="app_title">Мобильная регистратура</string>
+    <string name="make_enroll">Зписаться</string>
+    <string name="view_enroll">Зиписи по полису</string>
+    <string name="time_pick_btn">Выбрать время</string>
+
+    <string-array name="doctors_array">
+        <item>Терапевт</item>
+        <item>Окулист</item>
+        <item>Стоматолог</item>
+    </string-array>
+
+</resources>

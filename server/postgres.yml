@@ -1,0 +1,23 @@
+version: "3.9"
+
+networks:
+  postgres:
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgresdb
+    hostname: postgres-host
+    restart: always
+    volumes:
+      - "./postgres_data:/var/lib/postgres"
+    environment:
+      POSTGRES_PASSWORD: "qwerty"
+      POSTGRES_DB: "server"
+    networks:
+      - postgres
+    ports:
+      - "5436:5432"
+
+volumes:
+  postgres_data:
